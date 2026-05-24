@@ -1,1 +1,1 @@
-Day one of shell practice 
+Shell basics project
