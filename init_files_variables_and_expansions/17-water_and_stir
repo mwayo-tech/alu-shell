@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "13o 5i $(echo "$WATER"|tr 'water' '01234') $(echo "$STIR"|tr 'stir.' '01234') + p" | dc | tr '0123456789ABC' 'bestchol0123'
+printf '%o\n' $(python3 -c "print(int('$(echo $WATER | tr 'water' '01234')',5)+int('$(echo $STIR | tr 'stir.' '01234')',5))") | tr '01234567' 'bestchol'
