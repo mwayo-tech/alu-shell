@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Groups visitors by IP and HTTP status code, sorted by occurrences
 
-awk 'NF >= 9 && $9 ~ /^[0-9]{3}$/ {print $1, $9}' "$1" | sort | uniq -c | sort -rn
+awk 'NF >= 9 && $9 ~ /^[0-9]{3}$/ {print $1, $9}' "$1" | sort -k1,1 -k2,2 | uniq -c | sort -rn -k1,1 -k2,2 -k3,3
