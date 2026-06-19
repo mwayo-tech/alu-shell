@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#loops
 hour=0
 
 while [ $hour -le 12 ]
