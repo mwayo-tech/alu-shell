@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Writes "I am alive!" indefinitely
+# Writes I am alive! indefinitely
 
 while true
 do
